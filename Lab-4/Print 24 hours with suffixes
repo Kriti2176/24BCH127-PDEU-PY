@@ -1,0 +1,5 @@
+for h in range(24):
+    if h == 0: print("12 AM - Midnight")
+    elif h == 12: print("12 PM - Noon")
+    elif h < 12: print(h, "AM")
+    else: print(h-12, "PM")

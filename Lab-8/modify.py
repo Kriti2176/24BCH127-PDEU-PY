@@ -1,0 +1,7 @@
+s = set()
+s.update(["Ram", "Sham", "Tom", "Jerry", "Mira"])
+print("Initial:", s)
+s.discard("Sham")
+s.add("Ravi")
+s.difference_update(["Ram", "Tom"])
+print("Final:", s)

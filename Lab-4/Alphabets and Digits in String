@@ -1,0 +1,6 @@
+s = input("Enter string: ")
+a = d = 0
+for ch in s:
+    if ch.isalpha(): a += 1
+    elif ch.isdigit(): d += 1
+print("Alphabets:", a, "Digits:", d)

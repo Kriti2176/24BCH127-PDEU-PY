@@ -1,0 +1,10 @@
+x = float(input("Enter angle in degrees: "))
+x = x * 3.14159 / 180  # Convert to radians
+sinx = x
+sign = -1
+for i in range(3, 15, 2):
+    f = 1
+    for j in range(1, i+1): f *= j
+    sinx += sign * (x**i) / f
+    sign *= -1
+print("sin(x):", sinx)
